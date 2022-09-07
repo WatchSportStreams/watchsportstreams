@@ -61,16 +61,16 @@ a:hover {
     text-align: center!important;
     letter-spacing: -0.03em!important;
     color: #FFFFFF!important;
-    padding: 6.5px 0!important;
+    padding: 3.5px 0!important;
     background: #97242f!important;
     border-radius: 14px!important;
-    display: block!important;
+    display: grid !important;
     margin-bottom: 9px!important;
     transition: 0.2s all ease;
     -webkit-transition: 0.2s all ease;
     -moz-transition: 0.2s all ease;
+    height: 50px !important;
 }
-
 
 .scheduleg {
     background: url(../img/play.png);
@@ -155,7 +155,7 @@ a.text-danger:hover, a.text-danger:focus {
 			<div class="channel-area">
 				<div class="channel-item">
 					<div class="channel-item-inner">
-						<h2>Channels</h2>
+						<h2>Categories</h2>
 					</div>
 					<ul>
 					  <!--
@@ -170,22 +170,20 @@ a.text-danger:hover, a.text-danger:focus {
 						<li><a href="#"><img src="images/02.png" alt="" /></a></li>
 						<li><a href="#"><img src="images/03.png" alt="" /></a></li>  -->
 						
-						        <li><a href="/specific/live-cricket-streaming-hd-watch-online-crichd-1"> Cricket</a></li>
+		  <li><a href="/specific/live-cricket-streaming-hd-watch-online-crichd-1"> Cricket</a></li>
           <li><a href="/specific/live-football-streaming"> Football</a></li>
           <li><a href="/specific/rugby-live-streaming"> Rugby</a></li>
           <li><a href="/specific/tennis-live-streaming"> Tennis  </a></li>
-          <li><a href="/specific/moto-race-formula-1-live-streami">Moto Race F1 </a></li>
-          <li><a href="/specific/american-football-live-streami"> NFL/American Football </a></li>
+          <li><a href="/specific/moto-race-formula-1-live-streaming">MotoGP/F1 </a></li>
+          <li><a href="/specific/american-football-live-streaming"> NFL/American Football </a></li>
           <li><a href="/specific/wwe-live-streaming">  WWE</a></li>
-          <li><a href="/specific/boxing-live-streaming"> Boxing/UfC </a></li>
+          <li><a href="/specific/boxing-live-streaming"> Boxing/UFC </a></li>
           <li><a href="/specific/basketball-live-streaming"> NBA/Basketball  </a></li>
           <li><a href="/specific/baseball-live-streaming"> MLB/Baseball</a></li>
           <li><a href="/specific/golf-live-streaming"> Golf   </a></li>
           <li><a href="/specific/hockey-live-streaming"> Hockey  </a></li>
           <li><a href="/specific/cycling-live-streaming"> Cycling</a></li>
-          
-          <li><a href="specific/volleyball-live-streaming"> VolleyBall </a></li>
-          <li><a href="/specific/darts-live-streaming"> Darts </a></li>
+			<li><a href="/specific/darts-live-streaming"> Darts </a></li>
           <li><a href="/specific/snooker-live-streaming">  Snooker</a></li>
 						
 						
@@ -219,7 +217,8 @@ a.text-danger:hover, a.text-danger:focus {
 						</div>
 					</div>
 					<div class="sport-item-inner4">
-					  
+					              <p id="titleTxt">WatchSportStreams - Watch Any Sport Live Stream, Boxing Streams, Soccer Streams, Cricket Streams & Much more!</p>
+
 						  
   <%- iframeNewHome.replace('width="640"','width="640" sandbox="allow-same-origin allow-scripts  allow-forms"  ') %>
   
