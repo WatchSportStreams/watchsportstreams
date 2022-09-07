@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <style>
+
+    .im2:hover {
+      background-color: moccasin;
+    }
+
+    .head th {
+      border: 0.5px solid white;
+    }
+    
+    td {
+      font-size: 9px;
+      
+    }
+    
+
+    .imgl img {
+      width: 20px;
+    }
+
+ li{
+  display: inline;
+  list-style: none;
+  padding: 6px;
+}
+
+
+    /* The side navigation menu */
+    .sidenav {
+      height: 100%;
+      /* 100% Full-height */
+      width: 0;
+      /* 0 width - change this with JavaScript */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Stay on top */
+      top: 0;
+      /* Stay at the top */
+      left: 0;
+      background-color: #111;
+      /* Black*/
+      overflow-x: hidden;
+      /* Disable horizontal scroll */
+      padding-top: 60px;
+      /* Place content 60px from the top */
+      transition: 0.5s;
+      /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+
+    .menu {
+
+      width: 20px;
+      height: 3px;
+      background-color: black;
+      margin: 6px 0;
+      background-color: white;
+
+    }
+
+
+
+
+
+
+  </style>
+
+
+
+
+
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  
+  <div style="background-color:blk" class="container-fluid bg-dark  p-1">
+
+
+
+    <img class="w-25" src="/logoliv.png"> 
+
+
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a style="text-decoration:none" href="/no/0">  <li class="shadow "> Football   </li></a>
+
+<a style="text-decoration:none" href="/no/1"> <li class="shadow "> Ice Hockey   </li></a>
+
+<a style="text-decoration:none" href="/no/2"> <li class="shadow "> Basketball   </li></a>
+
+<a style="text-decoration:none" href="/no/3"> <li class="shadow "> Tennis  </li></a>
+
+<a style="text-decoration:none" href="/no/4"> <li class="shadow "> Baseball  </li></a>
+
+<a style="text-decoration:none" href="/no/5"> <li class="shadow "> Golf   </li></a>
+
+<a style="text-decoration:none" href="/no/6"> <li class="shadow "> Bicycle Racing  </li></a>
+
+<a style="text-decoration:none" href="/no/7"> <li class="shadow ">  Racing </li></a>
+
+
+
+<a style="text-decoration:none" href="/no/8"> <li class="shadow "> Other   </li></a>
+
+
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span style="m" class=" d-3 " onclick="openNav()">   <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+    </span> <!--<span class="text-white">MENU</span>-->
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <!--<div id="main">
+                      ...
+                    </div> -->
+
+
+
+
+
+  </div>
+
+  
+  
+
+  <div class="  container-fluid  p-1 " style="width:90%;background-color;black;">
+
+
+ <!--   <div style="background-color:midnightblue;height:60px" class="">
+
+    <!--  <img src="/logolive.png" width="100px"> 
+    </div> -->
+
+    <br>
+
+    <br>
+    
+    <div class="container-fluid">
+    
+       <nav class="navbar navbar-expand-lg navbar-light " style="background-color:;border:1px solid ">
+      <div class=" d-lg-none d-xl-block container-fluid">
+        <a style="" class="  navbar-brand" href="#"><img src="/pictures/schedule.png"></a>
+        <button style="border:none;background-color:cornsilk;" class="dropdown-toggle  text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pnavbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        </button>
+        <div class="collapse navbar-collapse" id="pnavbarNav">
+
+          <!-- Row one -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="/channels/0">  <img src="/pictures/3.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/1"> <img src="/pictures/18.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+
+
+
+
+          </div>
+
+
+
+          <!-- Row two -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/2">  <img src="/pictures/19.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/3"> <img src="/pictures/20.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+
+
+
+
+          </div>
+
+
+
+          <!-- Row three -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/4">  <img src="/pictures/49.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/5"> <img src="/pictures/50.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row four -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/6">  <img src="/pictures/51.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/7"> <img src="/pictures/55.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row five -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/8">  <img src="/pictures/56.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/9"> <img src="/pictures/1.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row six -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/10">  <img src="/pictures/4.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/11"> <img src="/pictures/5.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row seven -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/12">  <img src="/pictures/6.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/13"> <img src="/pictures/47.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row eight -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/14">  <img src="/pictures/custom-channels.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/15"> <img src="/pictures/48.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row nine -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/16">  <img src="/pictures/7.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/17"> <img src="/pictures/8.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row ten -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/18">  <img src="/pictures/9.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/19"> <img src="/pictures/10.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row eleven -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/20">  <img src="/pictures/11.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/21"> <img src="/pictures/12.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row twelve -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/22">  <img src="/pictures/13.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/23"> <img src="/pictures/54.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row thirteen -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/24">  <img src="/pictures/14.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/25"> <img src="/pictures/15.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+          <!-- Row fourteen -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/26">  <img src="/pictures/16.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/27"> <img src="/pictures/17.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row fifteen -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/28">  <img src="/pictures/53.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/29"> <img src="/pictures/21.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row sixteen -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/30">  <img src="/pictures/22.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/31"> <img src="/pictures/23.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+          <!-- Row seventeen -->
+
+          <div class="row p-1   ">
+
+            <div class="col-6">
+
+              <a href="channels/32">  <img src="/pictures/25.png" class="p-2 img-responsive" style="border:1px solid silver;width:100px;height:35px">
+              </a>
+            </div>
+
+
+            <div class="col-6">
+
+              <a href="channels/33"> <img src="/pictures/52.png" class="p-1 img-responsive" style="border:1px solid silver;width:100px;height:35px"> </a>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </nav> 
+    
+    </div>
+    
+    <!--Desktop start -->
+    
+    
+    
+    
+    
+    
+    <!-- Desktopbend -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+<br>
+    <div class="mx-auto   shadow" style="background-color:;width:99%;border-radius:1%">
+
+      
+    <div style="margin:0px;" class="container p-3 mx-auto ">  <ul class="   text-justify mx-auto d-inline ">
+
+<a style="text-decoration:none" href="/no/0">  <li class="shadow "> Football   </li></a>
+
+<a style="text-decoration:none" href="/no/1"> <li class="shadow "> Ice Hockey   </li></a>
+
+<a style="text-decoration:none" href="/no/2"> <li class="shadow "> Basketball   </li></a>
+
+<a style="text-decoration:none" href="/no/3"> <li class="shadow "> Tennis  </li></a>
+
+<a style="text-decoration:none" href="/no/4"> <li class="shadow "> Baseball  </li></a>
+
+<a style="text-decoration:none" href="/no/5"> <li class="shadow "> Golf   </li></a>
+
+<a style="text-decoration:none" href="/no/6"> <li class="shadow "> Bicycle Racing  </li></a>
+
+<a style="text-decoration:none" href="/no/7"> <li class="shadow ">  Racing </li></a>
+
+
+
+<a style="text-decoration:none" href="/no/8"> <li class="shadow "> Other   </li></a>
+
+
+
+
+
+</ul> </div>
+
+
+        
+        <div style="overflow-y:scroll;height:500px;width:90%;" class="container mx-auto">
+  
+
+        
+      
+      
+      <table style="height:100px;" class="table table-striped  mx-auto  text-center">
+      <!--  <tr>
+          
+          
+              <th>  TIME</th>
+          <th>  Title</th>
+          <th>  Live</th>
+          <th>  hLive</th>
+          
+
+          
+          
+          
+        </tr>  -->
+        
+        <% function gp(h) {
+          te = /href="/ ;
+          if(h.test(te)) {
+            return h
+          }
+        }  %>
+     
+              <% if(barrays != 0) { %>
+    <% for(arr of barrays) { %>
+       <tr>
+         <% let patt = /<a/ ; %>
+         <% if(patt.test(arr[3])) { %>
+    
+ <td>  <%- arr[0]  %>  </td>
+ <% replaced = arr[1].replace('\/\/',"http:\/\/") %>
+ <td>   <%- replaced  %>  </td>
+  <td>  <%- arr[2]  %>  </td>
+
+
+  
+
+
+  <td > <%= arr[3].replace(/<[^>]+>/g).replace('undefined','')
+    %> </td> 
+
+  <td > <a href="/watch<%= arr[3].match(/href="([^"]*)/)[1]%> " >Watch </a>    </td>
+
+    <% } %>  
+        </tr>
+    <% } %>   <% } %><br>
+    
+        </table>
+        <br>
+        <h5 class="text-center text-primary">  Upcoming Broadcast :  </h5>
+     
+     <table style="height:100px;" class="table table-striped  mx-auto  text-center">
+      <!--  <tr>
+          
+          
+              <th>  TIME</th>
+          <th>  Title</th>
+          <th>  Live</th>
+          <th>  hLive</th>
+          
+            
+            
+          
+          
+          
+        </tr>  -->
+        
+        <% function gp(h) {
+          te = /href="/ ;
+          if(h.test(te)) {
+            return h
+          }
+        }  %>
+     
+              <% if(barrays != 0) { %>
+    <% for(arr of barrays) { %>
+       <tr>
+                  <% let patyt = /<a/ ; %>
+            <% if(!patyt.test(arr[3])) { %>
+    
+ <td>  <%- arr[0]  %>  </td>
+ <td>   <%- arr[1]  %>  </td>
+  <td>  <%- arr[2]  %>  </td>
+  <td class=>  <%- arr[3]  %>  </td>
+ <!-- <td class="" >  <%- arr[4]  %>  </td> -->
+    <% } %>  
+        </tr>
+    <% } %> <% } %>
+    
+        </table>
+               
+        
+
+        
+        
+      
+  </div>
+  <br>
+  </div>
+
+    </div>  
+      
+      
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+
+<script>
+  
+function extractContent(s) {
+  var span = document.createElement('span');
+  span.innerHTML = s;
+  return span.textContent || span.innerText;
+};
+ 
+</script>
+
+  <script>
+
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+
+
+
+  </script>
+
+
+
+
+</body>
+</html>

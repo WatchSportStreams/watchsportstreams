@@ -1,0 +1,269 @@
+/*
+====================================
+large Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+
+
+
+
+
+
+.sport-item-inner2 ul {
+    margin: 0 -2px;
+}
+
+.sport-item-inner2 ul li {
+    padding: 0 2px;
+}
+
+.sport-item-inner2 ul li a {
+    font-size: 8px;
+}
+
+.discord-item-inner3 {
+    padding: 20px 10px 14px 10px;
+}
+
+.discord-item-inner4 a {
+    padding: 14px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+
+
+
+.header-item img {
+    max-width: 250px;
+}
+
+/*=== content area start ===*/
+
+.channel-item-inner h2 {
+    font-size: 26px;
+}
+
+.channel-item ul li a {
+    height: 50px;
+}
+
+.channel-item ul li a img {
+    max-width: 50%;
+}
+
+.sport-area {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.sport-item-inner {
+    padding: 12px 20px 13px 20px;
+}
+
+.sport-item-inner h2 {
+    font-size: 26px;
+}
+
+.sport-item-inner img {
+    max-width: 20px;
+}
+
+.sport-item-inner2 {
+    padding: 26px 10px 35px;
+}
+
+.sport-item-inner2 ul li {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.discord-item-inner2 {
+    padding: 17px 0 14px;
+}
+
+.discord-item-inner3 {
+    padding: 20px 10px 14px 10px;
+}
+
+.discord-item-inner3 p {
+    font-size: 9px;
+}
+
+.discord-item-inner3 p img {
+    max-width: 20px;
+    margin-right: 5px;
+}
+
+.discord-item-inner4 a {
+    font-size: 11px;
+    padding: 10px 0;
+}
+
+.discord-item-inner6 {
+    top: 12px;
+    right: 14px;
+}
+
+.discord-item-inner7 {
+    bottom: 10px;
+    left: 15px;
+}
+
+.discord-item-inner7 p {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (max-width: 767px) {	
+
+
+
+
+
+
+
+.header-item img {
+    max-width: 170px;
+}
+
+/*=== content area start ===*/
+
+.channel-area {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.channel-item-inner h2 {
+    font-size: 28px;
+}
+
+.sport-area {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sport-item-inner {
+    padding: 12px 15px 13px 15px;
+}
+
+.sport-item-inner h2 {
+    font-size: 26px;
+}
+
+.sport-item-inner img {
+    max-width: 20px;
+}
+
+.sport-item-inner2 {
+    padding: 26px 10px 30px;
+}
+
+.sport-item-inner2 ul {
+    margin: 0 -3px;
+}
+
+.sport-item-inner2 ul li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 3px;
+}
+
+.sport-item-inner4 img {
+    margin-bottom: 30px;
+}
+
+.discord-area {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

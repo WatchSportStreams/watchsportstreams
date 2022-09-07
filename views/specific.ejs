@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/stylesheets/all.min.css">
+
+  <link rel='stylesheet' id='bootstrap-css' href='https://cssjsimg2.procdncache.com/files/style.css?ver=7.03' type='text/css' media='all' />
+  <link rel='stylesheet' id='fontawesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css?ver=4.3.0' type='text/css' media='all' />
+  <link rel="shortcut icon" href="https://cssjsimg2.procdncache.com/img/favicon.ico" />
+
+
+  <style>
+
+  header nav {
+      background: black;
+    }
+
+    header nav a {
+      color: #fff;
+      background: #444;
+      margin-top: 1px;
+    }
+
+    header nav a:hover {
+      color: white;
+      border-left: 7px solid red;
+    }
+
+    .sidebar {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      font-family: open sans,sans-serif;
+      box-sizing: border-box;
+      z-index: 1111;
+      top: 0;
+      left: 0;
+      position: fixed;
+      height: 100%;
+      background: url(../img/bg-menu-side.png) repeat #222;
+      transition: all .3s ease-in-out;
+      overflow: hidden;
+      width: 0;
+      box-shadow: none;
+    }
+
+    .sidebar-open {
+      width: 80%;
+    }
+
+    .sidebar-scroller {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      font-family: open sans,sans-serif;
+      box-sizing: border-box;
+      position: absolute;
+      height: 100%;
+      overflow-y: auto;
+      width: 100%;
+    }
+
+    .sidebar-menu {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      font-family: open sans,sans-serif;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+      padding-left: 0;
+      list-style: none;
+      margin-top: 48px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 6px #000;
+      z-index: 200;
+    }
+
+
+    .sidebar li {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #333;
+      font-family: open sans,sans-serif;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    #sidebar    a {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 14px;
+      font-family: open sans,sans-serif;
+      list-style: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      border-bottom: 1px solid #222;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      background: #444;
+      color: #ddd;
+      position: relative;
+    }
+
+
+
+    table,tr,td,th {
+      border: 1px solid red;
+      border-collapse: collapse;
+    }
+
+
+
+  </style>
+
+
+
+
+
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+
+  <header>
+
+    <div class="w-100 d-flex " style="background:red">
+      <span onclick="h()" style="font-size:30px" class=" p-2 fa fa-bars text-white"></span>
+    </div>
+
+
+    <nav class="">
+      <div id="sidebar" class="sidebar ">
+        <div class="sidebar-scroller">
+          <ul class="sidebar-menu list-unstyled">
+            <li><a href="/"><i class="channels-icon2 allgames" title="Live Cricket and Watch Online Streaming CricHD"></i><span>Schedule</span></a></li>
+            <li><a href="/specific/live-cricket-streaming-hd-watch-online-crichd-16" title="Live Cricket Streaming"><i class="channels-icon2 Cricket"></i><span>Cricket</span></a>
+            </li>
+            <li><a href="/specific/live-football-streaming" title="Live Football Streaming"><i class="channels-icon2 Football"></i><span>Football</span></a></li>
+            <li><a href="/specific/rugby-live-streaming" title="Rugby Live Streaming"><i class="channels-icon2 Rugby"></i><span>Rugby</span></a></li>
+            <li><a href="/specific/tennis-live-streaming" title="Tennis Live Streaming"><i class="channels-icon2 Tennis"></i><span>Tennis</span></a></li>
+            <li><a href="/specific/moto-race-formula-1-live-streaming" title="Moto Race Formula 1 Live Streaming"><i class="channels-icon2 MotoRace"></i><span>Moto Race F1</span></a></li>
+            <li><a href="/specific/american-football-live-streaming" title="American Football – NFL Live Streaming"><i class="channels-icon2 NFL"></i><span>NFL/American Football</span></a></li>
+            <li><a href="/specific/wwe-live-streaming" title="WWE Live Streaming"><i class="channels-icon2 WWE"></i><span>WWE</span></a></li>
+            <li><a href="/specific/boxing-live-streaming" title="Boxing Live Streaming"><i class="channels-icon2 Boxing"></i><span>Boxing/UFC</span></a></li>
+            <li><a href="/specific/basketball-live-streaming" title="NBA and Basketball Live Streaming"><i class="channels-icon2 NBA"></i><span>NBA/Basketball</span></a></li>
+            <li><a href="/specific/baseball-live-streaming" title="MLB and Baseball Live Streaming"><i class="channels-icon2 MLB"></i><span>MLB/Baseball</span></a></li>
+            <li><a href="/specific/golf-live-streaming" title="Golf Live Streaming"><i class="channels-icon2 Golf"></i><span>Golf</span></a></li>
+            <li><a href="/specific/hockey-live-streaming" title="NHL and Hockey Live Streaming"><i class="channels-icon2 Hockey"></i><span>Hockey</span></a></li>
+            <li><a href="/specific/cycling-live-streaming" title="Cycling Live Streaming"><i class="channels-icon2 Cycling"></i><span>Cycling</span></a></li>
+            <li><a href="/specific/volleyball-live-streaming" title="Volleyball Live Streaming"><i class="channels-icon2 Volleyball"></i><span>VolleyBall</span></a></li>
+            <li><a href="/specific/darts-live-streaming" title="Darts Live Streaming"><i class="channels-icon2 Darts"></i><span>Darts</span></a></li>
+            <li><a href="/specific/snooker-live-streaming" title="Snooker Live Streaming"><i class="channels-icon2 Snooker"></i><span>Snooker</span></a></li>
+            <li><a href="/specific/other-sports-live-streaming" title="CricHD Live Streaming"><i class="channels-icon2 Others"></i><span>Other Sports</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+ 
+
+
+
+  </header>
+  
+
+
+  <div style="background-color:" class="container-fluid mx-auto  p-5">
+
+
+
+ 
+  <div onclick="h()" class="d-none overlay d-non">
+  </div>
+
+
+
+    <!--  <img class="w-25" src="/logoliv.png">  -->
+
+
+
+
+
+
+
+
+    <!--
+                                                                                                                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                                                                                                            <div class="container-fluid">
+                                                                                                                              <a class="navbar-brand" href="#"> Sports</a>
+                                                                                                                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                                                                                                                <span class="navbar-toggler-icon"></span>
+                                                                                                                              </button>
+
+                                                                                                                              <div class="collapse navbar-collapse" id="navbarNav">
+                                                                                                                                <hr>
+                                                                                                                                <ul class="navbar-nav mb-2">
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/home.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        All Categories
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/0">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/1.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        CRICKET
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/1">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/2-1.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        FOOTBALL
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/2">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/4.jpg" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        A.FOOTBALL
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/3">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/5.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        TENNIS
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/4">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/6.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        MOTORS
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/5">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/7.jpg" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        RUGBY
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/6">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/8.jpg" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        BASKETBALL
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/7">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/9.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        WWE
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/8">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/10.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        UFC
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/9">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/11.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        BOXING
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/10">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/12.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        GOLF
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+
+
+
+                                                                                                                                  <li class="nav-item im2">
+
+                                                                                                                                    <a class="nav-link  active" aria-current="page" href="/">  <p>
+                                                                                                                                      <img class=" d-block mx-auto" src="/others.png" width="40px" height="35px">
+                                                                                                                                      <span class="imt text-center d-block">
+                                                                                                                                        other Categories
+                                                                                                                                      </span>
+                                                                                                                                    </p>
+                                                                                                                                    </a>
+                                                                                                                                  </li>
+                                                                                                                                 </ul>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </nav> -->
+
+
+
+
+
+    <br>
+
+    <br>
+    <!--
+                                                                                                                          <div class="container-fluid">
+                                                                                                                             <nav class="navbar navbar-expand-lg navbar-light " style="background-color:;border:1px solid ">
+                                                                                                                            <div class=" d-lg-none d-xl-block container-fluid">
+                                                                                                                              <a style="" class="  navbar-brand" href="#"><img src="/pictures/schedule.png"></a>
+                                                                                                                              <button style="border:none;background-color:cornsilk;" class="dropdown-toggle  text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pnavbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                                                                                                                              </button>
+                                                                                                                              <div class="collapse navbar-collapse" id="pnavbarNav">
+
+
+
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </nav> -->
+
+
+
+    <!--Desktop start -->
+
+
+
+
+
+
+    <!-- Desktopbend -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <div class="mx-auto   shadow" style="background-color:;width:99%;border-radius:1%">
+
+
+      <table style="" class=" table table-striped  mx-auto  text-center" style="border-radius:">
+        <tr style="background-color:silver;" class=" text-white head t">
+
+
+
+
+          <th>  </th>
+          <th>  Title</th>
+          <th>  Start </th>
+          <th>   Link</th>
+
+
+        </tr>
+
+        <% if (arrays.length != 0) {
+          %>
+
+
+          <% for (arr of arrays) {
+            %>
+
+
+            <tr>
+
+
+              <td> <%-arr[0] %>    </td>
+
+              
+            <% mx = arr[2].substring(
+    arr[2].indexOf('rel="tag"') + 1, 
+    arr[2].lastIndexOf("</")
+) %>     
+
+
+              <td class="text-success"> <%= mx.replace('el="tag">',"") %> </td>
+              <td>   <%- arr[1] %> </td>
+<% var hrehf = arr[3].match(/href="([^"]*)/)[1] %>
+
+<% constantWeb = 'https:\/\/www.crichd.com/' %>
+              <td> <a href="/stream/<%= hrehf.replace(`${constantWeb}`,'') %>" class="text-danger text-decoration-none" >  Watch  </a></td>
+
+
+
+
+
+
+            </tr>
+            <%
+          } %>
+
+
+
+
+
+          <%
+        } else { %>
+
+<table class="table table-striped table-bordered">
+<tr>
+  <td> </td>
+  <td class="text-center"> There is no schedule at this time</td>
+  <td> </td>
+  
+</tr>
+
+</table>
+<% } %>
+
+
+
+
+
+
+      </table>
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/javascripts/bootstrap.min.js"></script>
+
+
+<script>
+
+  function extractContent(s) {
+    var span = document.createElement('span');
+    span.innerHTML = s;
+    return span.textContent || span.innerText;
+  };
+
+</script>
+
+<script>
+
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+
+function h() {
+      document.querySelector(".sidebar").classList.toggle("sidebar-open")
+
+
+
+      document.querySelector(".overlay").classList.toggle("d-none")
+    }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
