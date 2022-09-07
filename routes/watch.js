@@ -23,7 +23,7 @@ let addr = 'http://livetv.sx' ;
 
 const $ = await fetchHTML(addr+req.url);
 
-iframeRemaining = '<iframe  scrolling=no     sandbox="" frameborder="0 "width="1280" height="720" ' ;
+iframeRemaining = '<iframe  allowFullScreen="true" scrolling=no     sandbox="" frameborder="0 "width="1280" height="720" ' ;
 
 arr = []
 
