@@ -150,6 +150,11 @@ a.text-danger:hover, a.text-danger:focus {
     text-align: center;
 }
 
+
+th,td{
+  padding: 10px;
+}
+
   </style>
   
 
@@ -233,15 +238,24 @@ a.text-danger:hover, a.text-danger:focus {
           </div>
         </div>
        <div class="timezone-item-inner2" style="height:1100px;overflow:scroll;" > 
-          
+          <% function getTitle(str){
+            let phase1 = str.substring(str.indexOf('title')+7) ;
+            let phase2 = phase1.replace('itemprop="url">Watch</a>','')
+            let phase3 = phase2.replace('"','')
+            return phase3
+            }
+  %>            
           
           <table >
             <tr>
           <th>  </th>
-          <th>  Title</th>
+         
+          <th>  League</th>
+          <th>Title</th>
           <th>  Time/Date </th>
           <th>   Link</th>
           <th>   Status</th>
+         
              </tr>
             
             
@@ -269,6 +283,7 @@ a.text-danger:hover, a.text-danger:focus {
 
 
          <center>     <td class="text-success"> <%= mx.replace('el="tag">',"") %> </td>   </center>
+         <td><%= getTitle(arr[3]) %></td>
               <td>   <%- arr[1] %> </td>
 <% var hrehf = arr[3].match(/href="([^"]*)/)[1] %>
 
